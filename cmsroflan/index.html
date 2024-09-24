@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="first-section">
+      <img src="Group 85.svg" alt="" width="30px" class="cancel" />
+      <div class="first-section__text-container">
+        <h2 class="first-section__title">Добавить товар</h2>
+        <p class="first-section__id-text">id: 201910241</p>
+      </div>
+      <div class="main-section">
+        <div class="main-section__content-container">
+          <form action="" class="main-section__form-wrapper">
+            <label class="main-section__name-form">Наименование</label>
+            <input type="text" name="name" class="main-section__form" />
+          </form>
+          <form action="" class="main-section__form-wrapper">
+            <label class="main-section__name-form">Категория</label>
+            <input type="text" name="category" class="main-section__form" />
+          </form>
+        </div>
+        <div class="main-section__content-container">
+          <form action="" class="main-section__form-wrapper">
+            <label class="main-section__name-form">Описание</label>
+            <textarea
+              name="description"
+              class="main-section__form description"
+            ></textarea>
+          </form>
+        </div>
+        <div class="main-section__content-container">
+          <form action="" class="main-section__form-wrapper">
+            <label class="main-section__name-form">Единицы измерения</label>
+            <input type="text" name="units" class="main-section__form" />
+          </form>
+          <form action="" class="main-section__form-wrapper">
+            <label class="main-section__name-form">Дисконт</label>
+            <div class="checkbox">
+              <div style="cursor: pointer" onclick="foo(this)" class="">
+                <img src="./img/on.svg" />
+              </div>
+              <input
+                type="text"
+                name="discount"
+                class="main-section__form litle"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="main-section__content-container">
+          <form action="" class="main-section__form-wrapper">
+            <label class="main-section__name-form">Количество</label>
+            <input type="text" name="count" class="main-section__form" />
+          </form>
+          <form action="" class="main-section__form-wrapper">
+            <label class="main-section__name-form">Цена</label>
+            <input type="text" name="price" class="main-section__form" />
+          </form>
+        </div>
+        <div class="main-section__file">
+          <p class="main-section__error">
+            Изображение не должно превышать размер 1 Мб
+          </p>
+          <form action="">
+            <button class="add-image" type="file">Добавить изображение</button>
+          </form>
+        </div>
+        <img
+          src="/2424579063 1-PhotoRoom.png-PhotoRoom.png"
+          alt=""
+          class="main-section__img"
+        />
+        <img src="Vector.svg" alt="" class="main-section__remove" />
+      </div>
+      <div class="first-section__text-footer">
+        <p class="first-section__price">
+          Итоговая стоимость:
+          <span class="first-section__price-text">$ 900.00</span>
+        </p>
+        <form action="">
+          <button class="add-product" type="file">Добавить товар</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
